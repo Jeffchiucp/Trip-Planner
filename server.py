@@ -124,14 +124,26 @@ class Trip(Resource):
         trip = trips_collection.find_one({'email': user_email})
         print(user)
 
-        if trip is not None:
-            if 'email' in json:
-                user['email'] = json['email']
-                user[''] = json['']
+        update_destination = request.json['trips']['destination']
+        update_start_date = request.json['trips']['start_date']
+        update_end_date = request.json['trips']['end_date']
+        update_completed = request.json['trips']['completed']
+        update_waypoint_destination = request.json['trips']['waypoint']['waypoint_destination']
+        update_lat = request.json['trips']['waypoint']['lat']
+        update_long = request.json['json']['waypoint']['long']
 
-            trips_collection.save(user)
-            return (user, 200, None)
-        return({'error': 'email not found'}, 404, None)
+        if trip is not None:
+            trip['trips']['destination'] = update_destination
+            trip['trips']['start_date'] = update_start_date
+            trip['trips']['end_date'] = update_end_date
+            trip['trips']['completed']= update_completed
+            trip['trips']['waypoint']['waypoint_destination'] = update_waypoint_destination
+            trip['trips']['waypoint']['lat'] = update_lat
+            trip['json']['waypoint']['long'] = update_long
+            trips_collection.save(trip)
+            return (trip, 200, None)
+        else:
+            return(None, 404,None)
 
     def delete(self):
         trip_collection = app.db.trips
