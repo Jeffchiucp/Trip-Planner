@@ -95,7 +95,8 @@ class NetworkService
     static func fetch(route: Route, user: User? = nil, trip: Trip? = nil, httpMethod: HTTPMethods, completionHandler: @escaping (Data, Int) -> Void)
     {
         // Setting the url string and appending the path
-        let baseURL = "http://127.0.0.1:5000"
+//        let baseURL = "http://127.0.0.1:5000"
+        let baseURL = "https://desolate-meadow-39483.herokuapp.com"
         let fullURLString = URL(string: baseURL.appending(route.path()))
         // Appending the parameters
         let requestURLString = fullURLString?.appendingQueryParameters(route.urlParameters())
