@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import PMSuperButton
 
 class TripCell: UITableViewCell {
 
+    @IBOutlet weak var destinationLabel: UILabel!
+    @IBOutlet weak var startDateLabel: UILabel!
+    @IBOutlet var completedButton: PMSuperButton!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -1,13 +1,22 @@
+
 from flask import Flask, request, make_response
 from flask_restful import Resource, Api
 from pymongo import MongoClient
-from utils.mongo_json_encoder import JSONEncoder
 from bson.objectid import ObjectId
 import bcrypt
+import json
+from utils.mongo_json_encoder import JSONEncoder
+from flask import jsonify
+import pdb
+from bson import BSON
+from bson import json_util
+from basicauth import decode
+from bson.json_util import dumps
+import sys
 
 
 app = Flask(__name__)
-mongo = MongoClient('localhost', 27017)
+mongo = MongoClient("mongodb://astudilloelmer:ea12345@ds127105.mlab.com:27105/trip_planner_development")
 app.db = mongo.trip_planner_development
 app.bcrypt_rounds = 12
 api = Api(app)
@@ -17,11 +26,12 @@ def authenticated_request(func):
     # Set unlimited arguments to return back
     def wrapper(*args, **kwargs):
         auth = request.authorization
-        # Gets the headers in the Authorization JSONd
+        # Gets the headers in the Authorization JSON
         auth_code = request.headers['authorization']
+        # import pdb; pdb.set_trace()
         email, password = decode(auth_code)
         if email is not None and password is not None:
-            user_collection = database.users
+            user_collection = app.db.users
             found_user = user_collection.find_one({"email" : email})
             if found_user is not None:
                 encoded_password = password.encode("utf-8")
@@ -31,7 +41,8 @@ def authenticated_request(func):
                     return ({'error' : 'email or password is not correct'}, 401, None)
             else:
                 return ({'error' : 'email or password is not correct'}, 401, None)
-        else return ({'error' : 'could not find user in the database'})
+        else:
+         return ({'error' : 'could not find user in the database'})
     return wrapper
 
 ## Write Resources here
@@ -72,36 +83,25 @@ class User(Resource):
         # Get route to database
         user_collection = app.db.users
         auth = request.authorization
-        user_find = user_collection.find_one({"email": auth.username})
         # print("The current password is " + user_password)
-        encoded_password = user_password.encode('utf-8')
+        # encoded_password = user_password.encode('utf-8')
 
         if auth.username is not None and auth.password is not None:
+            user_find = user_collection.find_one({"email": auth.username})
             user_find.pop('password')
-            return(user_find,200, None)
+            return(user_find, 200, None)
         else:
             return(None, 401, None)
-
-
-        # if bcrypt.checkpw(encoded_password, user_find['password']):
-        #     user_find.pop('password')
-        #     return(user_find, 200, None)
-        # else:
-        #     return(None, 401, None)
 
     @authenticated_request
     def put(self):
         # Update one single node
         user_collection = app.db.users
         auth = request.authorization
-        # Document from MongoDatabase
         user_email = request.args.get('email')
         # Getting username from JSON passed from client
         user_json_username = request.json.get('username')
-        # JSON format
-        # 
-        # user_username = request.json.get('username')
-        # email = request.json.get('email')
+   
         find_user_email = user_collection.find_one({'email': auth.email})
         if find_user_email is None:
             return(None, 404, None)
@@ -130,29 +130,46 @@ class Trip(Resource):
 
     @authenticated_request
     def get(self):
-        """Get a trip. Either one or all trips"""
-        # Get all trips if not argument is passed
-        users_collection = app.db.users
-        trips_collection = app.db.trips
-        # trip_request = request.args.get('email')
+        # This function essentially fetches the resources
+        # Let us get access to the collection first
+        collection_of_trips = app.db.trips
+        collection_of_users = app.db.users
+        # Now that we have the collection we can fetch resources by email
+
         auth = request.authorization
-        # Return on trip if looking for a specific trip
-        # if 'destination' in trip_request:
-        #     trip_destination = trip_request.get('destination')
-        #     trip = trips_collection.find({'destination': trip_destination})
-        found_username_users = user_collection.find_one('username' : auth.username)
-        found_username_trips = trips_collection.find_one({'username': auth.username})
         encoded_password = auth.password.encode('utf-8')
 
-        # if email is None:
-        #     return({'error': 'Invalid email'}, 404, None)
-        # else:
-        #     return(email, 200, None)
+        # Now that we have the raw value we have to actually see that
+        # it is stored within our database
+        email_find = list(collection_of_trips.find({'username': auth.username}))
+        print(email_find)
+        user_password_find = collection_of_users.find_one({'username': auth.username})
 
-        if bcrypt.checkpw(encoded_password, found_username_user['password']):
-            return (found_username_trip, 200, None)
+
+        # json_email_find = dumps(email_find)
+        if bcrypt.checkpw(encoded_password, user_password_find['password']):
+            print("The user succesfully fetched their trips")
+            # print("The elements in the document array are : %s" %(documents_array))
+            return(json.loads(dumps(email_find)), 200, None)
         else:
-            return (None, 401, None)
+            print('The trips can not be found')
+            return(None, 401, None)
+
+    # @authenticated_request
+    # def get(self):
+    #     """Get a trip. Either one or all trips"""
+    #     # Get all trips if not argument is passed
+    #     users_collection = app.db.users
+    #     trips_collection = app.db.trips
+    #     auth = request.authorization
+    #     found_username_users = user_collection.find_one({'username' : auth.username})
+    #     found_username_trips = trips_collection.find_one({'username': auth.username})
+    #     encoded_password = auth.password.encode('utf-8')
+
+    #     if bcrypt.checkpw(encoded_password, found_username_user['password']):
+    #         return (found_username_trip, 200, None)
+    #     else:
+    #         return (None, 401, None)
 
     @authenticated_request
     def post(self):
@@ -212,7 +229,6 @@ class Trip(Resource):
             trip['start_date'] = update_start_date
             trip['end_date'] = update_end_date
             trip['completed']= update_completed
-            print("THis is my way point destination " + update_waypoint_destination)
             trip['waypoint']['waypoint_destination'] = update_waypoint_destination
             trip['waypoint']['lat'] = update_lat
             trip['waypoint']['long'] = update_long

@@ -7,25 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091514CB45258DCD5B10DA18 /* Pods_Trip_Planner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54CFE16FFCA8C4C2B2FCBDB /* Pods_Trip_Planner.framework */; };
 		27187F471F95548A009D33E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27187F461F95548A009D33E9 /* AppDelegate.swift */; };
-		27187F491F95548A009D33E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27187F481F95548A009D33E9 /* ViewController.swift */; };
+		27187F491F95548A009D33E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27187F481F95548A009D33E9 /* LoginViewController.swift */; };
 		27187F4C1F95548A009D33E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27187F4A1F95548A009D33E9 /* Main.storyboard */; };
 		27187F4E1F95548A009D33E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27187F4D1F95548A009D33E9 /* Assets.xcassets */; };
 		27187F511F95548A009D33E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27187F4F1F95548A009D33E9 /* LaunchScreen.storyboard */; };
 		27187F591F95549F009D33E9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27187F581F95549F009D33E9 /* User.swift */; };
 		27187F5B1F9554BB009D33E9 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27187F5A1F9554BB009D33E9 /* Trip.swift */; };
+		27187F5D1F971605009D33E9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27187F5C1F971605009D33E9 /* NetworkService.swift */; };
+		27187F5F1F972D6F009D33E9 /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27187F5E1F972D6F009D33E9 /* TripCell.swift */; };
+		27187F611F9731FB009D33E9 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27187F601F9731FB009D33E9 /* TripsViewController.swift */; };
+		27187F631F97320C009D33E9 /* TripDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27187F621F97320C009D33E9 /* TripDetailViewController.swift */; };
+		27187F651F973216009D33E9 /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27187F641F973216009D33E9 /* AddTripViewController.swift */; };
+		27187F671F99B57E009D33E9 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27187F661F99B57E009D33E9 /* AlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D82FB37A9564BCEDC8DAC2B /* Pods-Trip-Planner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trip-Planner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trip-Planner/Pods-Trip-Planner.debug.xcconfig"; sourceTree = "<group>"; };
 		27187F431F95548A009D33E9 /* Trip-Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trip-Planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27187F461F95548A009D33E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		27187F481F95548A009D33E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27187F481F95548A009D33E9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		27187F4B1F95548A009D33E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27187F4D1F95548A009D33E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27187F501F95548A009D33E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27187F521F95548A009D33E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27187F581F95549F009D33E9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		27187F5A1F9554BB009D33E9 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		27187F5C1F971605009D33E9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		27187F5E1F972D6F009D33E9 /* TripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCell.swift; sourceTree = "<group>"; };
+		27187F601F9731FB009D33E9 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
+		27187F621F97320C009D33E9 /* TripDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailViewController.swift; sourceTree = "<group>"; };
+		27187F641F973216009D33E9 /* AddTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripViewController.swift; sourceTree = "<group>"; };
+		27187F661F99B57E009D33E9 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		B54CFE16FFCA8C4C2B2FCBDB /* Pods_Trip_Planner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trip_Planner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9C521D3C1D283CEAC6359E6 /* Pods-Trip-Planner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trip-Planner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trip-Planner/Pods-Trip-Planner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				091514CB45258DCD5B10DA18 /* Pods_Trip_Planner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +61,8 @@
 			children = (
 				27187F451F95548A009D33E9 /* Trip-Planner */,
 				27187F441F95548A009D33E9 /* Products */,
+				6FA3010546A1F60BA3E78F05 /* Pods */,
+				E7F604DB8CB30679B20E94A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,15 +78,38 @@
 			isa = PBXGroup;
 			children = (
 				27187F461F95548A009D33E9 /* AppDelegate.swift */,
-				27187F481F95548A009D33E9 /* ViewController.swift */,
+				27187F661F99B57E009D33E9 /* AlertViewController.swift */,
+				27187F481F95548A009D33E9 /* LoginViewController.swift */,
+				27187F601F9731FB009D33E9 /* TripsViewController.swift */,
+				27187F621F97320C009D33E9 /* TripDetailViewController.swift */,
+				27187F641F973216009D33E9 /* AddTripViewController.swift */,
+				27187F5E1F972D6F009D33E9 /* TripCell.swift */,
 				27187F581F95549F009D33E9 /* User.swift */,
 				27187F5A1F9554BB009D33E9 /* Trip.swift */,
+				27187F5C1F971605009D33E9 /* NetworkService.swift */,
 				27187F4A1F95548A009D33E9 /* Main.storyboard */,
 				27187F4D1F95548A009D33E9 /* Assets.xcassets */,
 				27187F4F1F95548A009D33E9 /* LaunchScreen.storyboard */,
 				27187F521F95548A009D33E9 /* Info.plist */,
 			);
 			path = "Trip-Planner";
+			sourceTree = "<group>";
+		};
+		6FA3010546A1F60BA3E78F05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D82FB37A9564BCEDC8DAC2B /* Pods-Trip-Planner.debug.xcconfig */,
+				B9C521D3C1D283CEAC6359E6 /* Pods-Trip-Planner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E7F604DB8CB30679B20E94A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B54CFE16FFCA8C4C2B2FCBDB /* Pods_Trip_Planner.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27187F551F95548A009D33E9 /* Build configuration list for PBXNativeTarget "Trip-Planner" */;
 			buildPhases = (
+				4EF44C6461EA84C71BCFC2A8 /* [CP] Check Pods Manifest.lock */,
 				27187F3F1F95548A009D33E9 /* Sources */,
 				27187F401F95548A009D33E9 /* Frameworks */,
 				27187F411F95548A009D33E9 /* Resources */,
+				EECEF766AC39C20CAF6A396C /* [CP] Embed Pods Frameworks */,
+				B5FACBB27D0019FAF742A9EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,14 +182,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4EF44C6461EA84C71BCFC2A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Trip-Planner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5FACBB27D0019FAF742A9EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trip-Planner/Pods-Trip-Planner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EECEF766AC39C20CAF6A396C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Trip-Planner/Pods-Trip-Planner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PMSuperButton/PMSuperButton.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PMSuperButton.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trip-Planner/Pods-Trip-Planner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		27187F3F1F95548A009D33E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27187F611F9731FB009D33E9 /* TripsViewController.swift in Sources */,
+				27187F5D1F971605009D33E9 /* NetworkService.swift in Sources */,
+				27187F631F97320C009D33E9 /* TripDetailViewController.swift in Sources */,
+				27187F671F99B57E009D33E9 /* AlertViewController.swift in Sources */,
 				27187F5B1F9554BB009D33E9 /* Trip.swift in Sources */,
-				27187F491F95548A009D33E9 /* ViewController.swift in Sources */,
+				27187F491F95548A009D33E9 /* LoginViewController.swift in Sources */,
+				27187F651F973216009D33E9 /* AddTripViewController.swift in Sources */,
 				27187F471F95548A009D33E9 /* AppDelegate.swift in Sources */,
+				27187F5F1F972D6F009D33E9 /* TripCell.swift in Sources */,
 				27187F591F95549F009D33E9 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +385,7 @@
 		};
 		27187F561F95548A009D33E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D82FB37A9564BCEDC8DAC2B /* Pods-Trip-Planner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +401,7 @@
 		};
 		27187F571F95548A009D33E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9C521D3C1D283CEAC6359E6 /* Pods-Trip-Planner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
