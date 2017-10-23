@@ -19,6 +19,7 @@ class TripDetailViewController: UIViewController {
     @IBOutlet weak var completedTripButton: UIButton!
     
     var trip : Trip?
+    var user : User?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +60,15 @@ class TripDetailViewController: UIViewController {
         
         if completedTripButton.titleLabel?.text == "Completed"
         {
-            self.navigationController?.popViewController(animated: true)
+            let tripCompleted = true
+            let updatedTrip = Trip(destination: self.trip?.destination, completed: tripCompleted, email: self.trip?.email, startDate: self.trip?.startDate, endDate: self.trip?.endDate, waypointDestination: self.trip?.waypointDestination, latitude: self.trip?.latitude, longitude: self.trip?.longitude)
+            NetworkService.fetch(route: Route.trips(), user: user, trip: updatedTrip, httpMethod: .put, completionHandler: { (data, int) in
+                if int == 200
+                {
+                    print("Success")
+                    self.navigationController?.popViewController(animated: true)
+                }
+            })
         }
         else
         {

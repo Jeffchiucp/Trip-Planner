@@ -66,6 +66,7 @@ extension TripsViewController : UITableViewDataSource
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let tripDetailVC = storyboard.instantiateViewController(withIdentifier: "TripDetailViewController") as! TripDetailViewController
         tripDetailVC.trip = trip
+        tripDetailVC.user = user
         self.navigationController?.pushViewController(tripDetailVC, animated: true)
     }
     
