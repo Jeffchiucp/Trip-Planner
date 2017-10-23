@@ -16,10 +16,8 @@ import sys
 
 
 app = Flask(__name__)
-# mongo = MongoClient("mongodb://astudilloelmer:12345@ds127105.mlab.com:27105/trip_planner_development")
-client = MongoClient('mongodb://localhost:27017/')
-app.db = client.trip_planner_development
-# app.db = mongo.trip_planner_development
+mongo = MongoClient("mongodb://astudilloelmer:ea12345@ds127105.mlab.com:27105/trip_planner_development")
+app.db = mongo.trip_planner_development
 app.bcrypt_rounds = 12
 api = Api(app)
 
@@ -80,7 +78,6 @@ class User(Resource):
         else:
             return(None, 404, None) 
 
-
     @authenticated_request
     def get(self):
         # Get route to database
@@ -95,7 +92,6 @@ class User(Resource):
             return(user_find, 200, None)
         else:
             return(None, 401, None)
-
 
     @authenticated_request
     def put(self):
@@ -159,6 +155,21 @@ class Trip(Resource):
             print('The trips can not be found')
             return(None, 401, None)
 
+    # @authenticated_request
+    # def get(self):
+    #     """Get a trip. Either one or all trips"""
+    #     # Get all trips if not argument is passed
+    #     users_collection = app.db.users
+    #     trips_collection = app.db.trips
+    #     auth = request.authorization
+    #     found_username_users = user_collection.find_one({'username' : auth.username})
+    #     found_username_trips = trips_collection.find_one({'username': auth.username})
+    #     encoded_password = auth.password.encode('utf-8')
+
+    #     if bcrypt.checkpw(encoded_password, found_username_user['password']):
+    #         return (found_username_trip, 200, None)
+    #     else:
+    #         return (None, 401, None)
 
     @authenticated_request
     def post(self):
@@ -181,6 +192,13 @@ class Trip(Resource):
             return (None, 404, None)
 
 
+        # if 'destination' not in trip_request:
+        #     return ({'error': 'empty required fields'}, 400, None)
+        # else:
+        #     trips_collection.insert_one(trip_request)
+        #     # Return json to see what JSON was pushed
+        #     return (trip_request, 201, None)
+
     @authenticated_request
     def put(self):
         trips_collection = app.db.trips
@@ -188,6 +206,9 @@ class Trip(Resource):
 
         user_email = request.args.get("email")
         auth = request.authorization
+
+        # if 'destination' in args:
+        #     trip_destination = args.get('destination')
 
         trip = trips_collection.find_one({'username': auth.username})
         found_username_user = users_collection.find_one({'username', auth.username})
@@ -215,7 +236,6 @@ class Trip(Resource):
             return (trip, 200, None)
         else:
             return(None, 404,None)
-
 
     def delete(self):
         trip_collection = app.db.trips
