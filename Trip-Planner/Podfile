@@ -7,5 +7,6 @@ target 'Trip-Planner' do
 
   # Pods for Trip-Planner
   pod 'PMSuperButton'
+  pod 'KeychainSwift'
 
 end

@@ -28,7 +28,7 @@ class TripsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         guard let currentUser = user else { return }
-        
+        print(user)
         NetworkService.fetch(route: Route.trips(), user: currentUser , httpMethod: .get) { (data, response) in
             print("This is the current status \(data) \(response)")
             let trips = try? JSONDecoder().decode([Trip].self, from: data)

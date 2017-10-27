@@ -7,19 +7,20 @@
 //
 
 import UIKit
+import KeychainSwift
 
 struct User
 {
     var username : String
     let password: String
-    let credential : String
+    var keychain = KeychainSwift()
     
     init(username: String, password: String)
     {
         self.username = username
         self.password = password
-        // Storing username and password for future use
-        self.credential = BasicAuth.generateBasicAuthHeader(username: self.username, password: self.password)
+        let credential = BasicAuth.generateBasicAuthHeader(username: self.username, password: self.password)
+        self.keychain.set(credential, forKey: "credential")
     }
 }
 

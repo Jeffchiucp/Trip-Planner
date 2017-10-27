@@ -7,17 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1774DF181AED8F18745294D9397F9057 /* Pods-Trip-Planner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69EE77AFEC3BA2772B30546018563EAB /* Pods-Trip-Planner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3064ED0EFC34BE34A0C5BD8422077658 /* Pods-Trip-Planner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AFBE18F2904E3F915B01ED8A4B62D5 /* Pods-Trip-Planner-dummy.m */; };
+		08AA89D020B5C4FD74D1529A3E972AB9 /* KeychainSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8D4794AD5FCAF811C3F6710B6A43CD /* KeychainSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		328979DA775207048BBE1261E746FA2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		5ABD86E08E55E4B31E9B49800F8A3834 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		87C2B487FB1DC2CB2B862BEB65D67EEF /* PMSuperButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B86CA748A06870905198DC28560BC454 /* PMSuperButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B1036C57EDFC08720BE4FEC75DF60024 /* PMSuperButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F4F4B8DC6313E4D129EE58AD9E569 /* PMSuperButton-dummy.m */; };
-		CF9A813528DE75214A1BED1B1AFB28B0 /* PMSuperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0F363261BA036BA74CE811ABBBA32 /* PMSuperButton.swift */; };
+		63E3E54D78ECF2A2C25FB5F202B96D40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7C0F17488B3552EAAFC074CFC4491DD5 /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFB5FA886A94144E7C1CD18403EC6F2 /* TegKeychainConstants.swift */; };
+		87C2B487FB1DC2CB2B862BEB65D67EEF /* PMSuperButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 008CF8C20FD6B31FAF0164CBD24C1E62 /* PMSuperButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9912B0A2FBAD0D92551D0A7B25E56DFB /* Pods-Trip-Planner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69EE77AFEC3BA2772B30546018563EAB /* Pods-Trip-Planner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD0E8D5F58B0B824D2631BDA9D541DFE /* KeychainSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C557EA1D1D77586E28BEFDC928FBEC /* KeychainSwift-dummy.m */; };
+		B1036C57EDFC08720BE4FEC75DF60024 /* PMSuperButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BB990035D846D610F0DC44878FE3B6 /* PMSuperButton-dummy.m */; };
+		CCBE57237E9F0DBAAF02A5575244F3BE /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3B6D3A36462A1EB92EBF496883AA6A /* KeychainSwift.swift */; };
+		CF9A813528DE75214A1BED1B1AFB28B0 /* PMSuperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5AE97613405A6E3646D7189D441C3A /* PMSuperButton.swift */; };
+		EA65E58FA3AD08D8A8D4E15885378C5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		EBA8B955A11296BD7AA307752FE82ED4 /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F96F094FD6231E4658AFE68CBA2365 /* KeychainSwiftAccessOptions.swift */; };
+		F896CB94069D294C6E2A1926FA994FC1 /* Pods-Trip-Planner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AFBE18F2904E3F915B01ED8A4B62D5 /* Pods-Trip-Planner-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		540F6D7B8439CC4090C57CA6582BB541 /* PBXContainerItemProxy */ = {
+		2DA2B7513009D1AD61C407DA3760502C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38ACA430605AFB4229712A18BDDF5086;
+			remoteInfo = KeychainSwift;
+		};
+		8EF44BCF6903F41E453E0F8D9971D0FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -27,30 +40,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		008CF8C20FD6B31FAF0164CBD24C1E62 /* PMSuperButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PMSuperButton-umbrella.h"; sourceTree = "<group>"; };
+		03BB990035D846D610F0DC44878FE3B6 /* PMSuperButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PMSuperButton-dummy.m"; sourceTree = "<group>"; };
+		061B431D806DD21521B042E14BFD51E1 /* PMSuperButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PMSuperButton.framework; path = PMSuperButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D8E587BDBDF92D9FBD292EA4408FBDC /* Pods-Trip-Planner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Trip-Planner-acknowledgements.plist"; sourceTree = "<group>"; };
 		0EC1F993E106BF2509A76731892633ED /* Pods-Trip-Planner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Trip-Planner-acknowledgements.markdown"; sourceTree = "<group>"; };
+		16AF51CBC921C368BECA136CA200FD17 /* Pods_Trip_Planner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Trip_Planner.framework; path = "Pods-Trip-Planner.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		179ED25676735698FC19D669598BB654 /* KeychainSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-prefix.pch"; sourceTree = "<group>"; };
+		1DFB5FA886A94144E7C1CD18403EC6F2 /* TegKeychainConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegKeychainConstants.swift; path = Sources/TegKeychainConstants.swift; sourceTree = "<group>"; };
+		229A4FA737BC2BD78F044D35AF120C2A /* PMSuperButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PMSuperButton.modulemap; sourceTree = "<group>"; };
 		28006767D4050F3CA84F13DD0E546178 /* Pods-Trip-Planner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Trip-Planner.release.xcconfig"; sourceTree = "<group>"; };
+		3AE3CE252A185DCA3A2609922C9BE3FB /* KeychainSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainSwift.framework; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B71685E9E6BB461EF12C29742E2036 /* KeychainSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KeychainSwift.modulemap; sourceTree = "<group>"; };
 		4673306E0C435ECA587D09959443F349 /* Pods-Trip-Planner-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Trip-Planner-resources.sh"; sourceTree = "<group>"; };
-		56D0F363261BA036BA74CE811ABBBA32 /* PMSuperButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PMSuperButton.swift; path = Sources/PMSuperButton.swift; sourceTree = "<group>"; };
-		56F73CC18A42BDC32BCADBFB6362A94E /* PMSuperButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PMSuperButton.xcconfig; sourceTree = "<group>"; };
-		61835FB1700B14D2C53244AFD7EA5A52 /* PMSuperButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PMSuperButton-prefix.pch"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		696F9B562693669F96F1D8538106E4E0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69EE77AFEC3BA2772B30546018563EAB /* Pods-Trip-Planner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Trip-Planner-umbrella.h"; sourceTree = "<group>"; };
-		754F4F4B8DC6313E4D129EE58AD9E569 /* PMSuperButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PMSuperButton-dummy.m"; sourceTree = "<group>"; };
-		7D5FAEE908B95445B935C97E0EA49FCD /* PMSuperButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PMSuperButton.modulemap; sourceTree = "<group>"; };
-		84AA18603D5E81DB66242CE6A9C2B8F0 /* PMSuperButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PMSuperButton.framework; path = PMSuperButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B5AE97613405A6E3646D7189D441C3A /* PMSuperButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PMSuperButton.swift; path = Sources/PMSuperButton.swift; sourceTree = "<group>"; };
+		73F74AC3D80B08C8A2DAFDEB7E999214 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		805A5493ECF5298F9D08E621BABBEDA9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87890E4A49A9453873811E3055921D49 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F3B6D3A36462A1EB92EBF496883AA6A /* KeychainSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwift.swift; path = Sources/KeychainSwift.swift; sourceTree = "<group>"; };
 		93694E1C925B16F06FFCFD4490E370D8 /* Pods-Trip-Planner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Trip-Planner.debug.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D8CCFEFB54D6EDFF011806994EEFFB7 /* PMSuperButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PMSuperButton.xcconfig; sourceTree = "<group>"; };
 		B7005046347F0D4AD536F1BF92E57B66 /* Pods-Trip-Planner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Trip-Planner-frameworks.sh"; sourceTree = "<group>"; };
-		B86CA748A06870905198DC28560BC454 /* PMSuperButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PMSuperButton-umbrella.h"; sourceTree = "<group>"; };
-		EE86D0C938F283284B2DD7E859448297 /* Pods_Trip_Planner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Trip_Planner.framework; path = "Pods-Trip-Planner.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD4B1F79C98D6D8D77A1670D6DDC8865 /* PMSuperButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PMSuperButton-prefix.pch"; sourceTree = "<group>"; };
+		BF8D4794AD5FCAF811C3F6710B6A43CD /* KeychainSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-umbrella.h"; sourceTree = "<group>"; };
+		D8F96F094FD6231E4658AFE68CBA2365 /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwiftAccessOptions.swift; path = Sources/KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
 		F0AFBE18F2904E3F915B01ED8A4B62D5 /* Pods-Trip-Planner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Trip-Planner-dummy.m"; sourceTree = "<group>"; };
+		F16BDACCA0A2A71F979A0506568633E6 /* KeychainSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.xcconfig; sourceTree = "<group>"; };
+		F3C557EA1D1D77586E28BEFDC928FBEC /* KeychainSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainSwift-dummy.m"; sourceTree = "<group>"; };
 		FB280B99EF1471CC1676A4B1E232A189 /* Pods-Trip-Planner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Trip-Planner.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0E02F2A2A18ABB85B43D58302E6CAADF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA65E58FA3AD08D8A8D4E15885378C5B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		115E326697D2F11E1F85622CE850D89F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,11 +90,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C45EE81F4337DA3F84546F04357AE79 /* Frameworks */ = {
+		4644C6D96A73768B60CF66E22FD3B879 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ABD86E08E55E4B31E9B49800F8A3834 /* Foundation.framework in Frameworks */,
+				63E3E54D78ECF2A2C25FB5F202B96D40 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,22 +119,42 @@
 			path = "Target Support Files/Pods-Trip-Planner";
 			sourceTree = "<group>";
 		};
-		1DFF25B77C947FD3208D3AA506B324A9 /* PMSuperButton */ = {
+		10C5DA7D6856E8D5A77846B022FCD47B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				56D0F363261BA036BA74CE811ABBBA32 /* PMSuperButton.swift */,
-				C490D3142D2D1D097F467357EEE36FC1 /* Support Files */,
+				805A5493ECF5298F9D08E621BABBEDA9 /* Info.plist */,
+				41B71685E9E6BB461EF12C29742E2036 /* KeychainSwift.modulemap */,
+				F16BDACCA0A2A71F979A0506568633E6 /* KeychainSwift.xcconfig */,
+				F3C557EA1D1D77586E28BEFDC928FBEC /* KeychainSwift-dummy.m */,
+				179ED25676735698FC19D669598BB654 /* KeychainSwift-prefix.pch */,
+				BF8D4794AD5FCAF811C3F6710B6A43CD /* KeychainSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KeychainSwift";
+			sourceTree = "<group>";
+		};
+		538834C5CB99FABCEB1209699698FDC1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				73F74AC3D80B08C8A2DAFDEB7E999214 /* Info.plist */,
+				229A4FA737BC2BD78F044D35AF120C2A /* PMSuperButton.modulemap */,
+				9D8CCFEFB54D6EDFF011806994EEFFB7 /* PMSuperButton.xcconfig */,
+				03BB990035D846D610F0DC44878FE3B6 /* PMSuperButton-dummy.m */,
+				BD4B1F79C98D6D8D77A1670D6DDC8865 /* PMSuperButton-prefix.pch */,
+				008CF8C20FD6B31FAF0164CBD24C1E62 /* PMSuperButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PMSuperButton";
+			sourceTree = "<group>";
+		};
+		620D070943370496DA41470365EED261 /* PMSuperButton */ = {
+			isa = PBXGroup;
+			children = (
+				6B5AE97613405A6E3646D7189D441C3A /* PMSuperButton.swift */,
+				538834C5CB99FABCEB1209699698FDC1 /* Support Files */,
 			);
 			name = PMSuperButton;
 			path = PMSuperButton;
-			sourceTree = "<group>";
-		};
-		63628475A454A0138C0816F71969788D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1DFF25B77C947FD3208D3AA506B324A9 /* PMSuperButton */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -111,17 +162,18 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				63628475A454A0138C0816F71969788D /* Pods */,
-				B2A185617DAE7341151D45199B69FDCD /* Products */,
+				F13660EDD21582C443D6F12488F9069F /* Pods */,
+				BAF14580500F05F77B3D6D17C87273B8 /* Products */,
 				FD6C80CFD2F674E33FD53B93F6928C67 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B2A185617DAE7341151D45199B69FDCD /* Products */ = {
+		BAF14580500F05F77B3D6D17C87273B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84AA18603D5E81DB66242CE6A9C2B8F0 /* PMSuperButton.framework */,
-				EE86D0C938F283284B2DD7E859448297 /* Pods_Trip_Planner.framework */,
+				3AE3CE252A185DCA3A2609922C9BE3FB /* KeychainSwift.framework */,
+				061B431D806DD21521B042E14BFD51E1 /* PMSuperButton.framework */,
+				16AF51CBC921C368BECA136CA200FD17 /* Pods_Trip_Planner.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,18 +186,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C490D3142D2D1D097F467357EEE36FC1 /* Support Files */ = {
+		BD988516982B0DCA242E48F402D1871B /* KeychainSwift */ = {
 			isa = PBXGroup;
 			children = (
-				696F9B562693669F96F1D8538106E4E0 /* Info.plist */,
-				7D5FAEE908B95445B935C97E0EA49FCD /* PMSuperButton.modulemap */,
-				56F73CC18A42BDC32BCADBFB6362A94E /* PMSuperButton.xcconfig */,
-				754F4F4B8DC6313E4D129EE58AD9E569 /* PMSuperButton-dummy.m */,
-				61835FB1700B14D2C53244AFD7EA5A52 /* PMSuperButton-prefix.pch */,
-				B86CA748A06870905198DC28560BC454 /* PMSuperButton-umbrella.h */,
+				8F3B6D3A36462A1EB92EBF496883AA6A /* KeychainSwift.swift */,
+				D8F96F094FD6231E4658AFE68CBA2365 /* KeychainSwiftAccessOptions.swift */,
+				1DFB5FA886A94144E7C1CD18403EC6F2 /* TegKeychainConstants.swift */,
+				10C5DA7D6856E8D5A77846B022FCD47B /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/PMSuperButton";
+			name = KeychainSwift;
+			path = KeychainSwift;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -154,6 +204,15 @@
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		F13660EDD21582C443D6F12488F9069F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD988516982B0DCA242E48F402D1871B /* KeychainSwift */,
+				620D070943370496DA41470365EED261 /* PMSuperButton */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		FD6C80CFD2F674E33FD53B93F6928C67 /* Targets Support Files */ = {
@@ -167,11 +226,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5E1AD179971898485794D466D0DCEC4D /* Headers */ = {
+		1E7D28C77D7AC1B4DA27A381423F76AD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1774DF181AED8F18745294D9397F9057 /* Pods-Trip-Planner-umbrella.h in Headers */,
+				9912B0A2FBAD0D92551D0A7B25E56DFB /* Pods-Trip-Planner-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,9 +242,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FDCCA8DB9A9A2B78257AAEB7F44C85C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08AA89D020B5C4FD74D1529A3E972AB9 /* KeychainSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		38ACA430605AFB4229712A18BDDF5086 /* KeychainSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C5D5A8E6CDB4211B0732F819F55A47 /* Build configuration list for PBXNativeTarget "KeychainSwift" */;
+			buildPhases = (
+				BA64D531146693E66BF1C1CEE1D81BC5 /* Sources */,
+				4644C6D96A73768B60CF66E22FD3B879 /* Frameworks */,
+				FDCCA8DB9A9A2B78257AAEB7F44C85C3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeychainSwift;
+			productName = KeychainSwift;
+			productReference = 3AE3CE252A185DCA3A2609922C9BE3FB /* KeychainSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		584C6AB52DA3F6C1B2F9F572D0568496 /* PMSuperButton */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 194CB6CCF275AA1E1EBCE931E47C7E45 /* Build configuration list for PBXNativeTarget "PMSuperButton" */;
@@ -200,25 +284,26 @@
 			);
 			name = PMSuperButton;
 			productName = PMSuperButton;
-			productReference = 84AA18603D5E81DB66242CE6A9C2B8F0 /* PMSuperButton.framework */;
+			productReference = 061B431D806DD21521B042E14BFD51E1 /* PMSuperButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FF099A87B1024CF829B40F9A209E9243 /* Pods-Trip-Planner */ = {
+		F3AFBF7DECDA6EF30988FBDCED59EDFD /* Pods-Trip-Planner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4A3C3691ABEB44216B553BA0D7EF657 /* Build configuration list for PBXNativeTarget "Pods-Trip-Planner" */;
+			buildConfigurationList = 0CC89CCF7EE28F471565043D314AA668 /* Build configuration list for PBXNativeTarget "Pods-Trip-Planner" */;
 			buildPhases = (
-				AE2A768EB70A8A72CC303BE5031B264F /* Sources */,
-				4C45EE81F4337DA3F84546F04357AE79 /* Frameworks */,
-				5E1AD179971898485794D466D0DCEC4D /* Headers */,
+				90F5ED9FEE076269CA38139173284945 /* Sources */,
+				0E02F2A2A18ABB85B43D58302E6CAADF /* Frameworks */,
+				1E7D28C77D7AC1B4DA27A381423F76AD /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F6E28642F194E61DDA4BB2F4D001854C /* PBXTargetDependency */,
+				AF96750A165C6E4C5A0E521E0C239763 /* PBXTargetDependency */,
+				7FF290172DE98BC024DA51BF3D982DDC /* PBXTargetDependency */,
 			);
 			name = "Pods-Trip-Planner";
 			productName = "Pods-Trip-Planner";
-			productReference = EE86D0C938F283284B2DD7E859448297 /* Pods_Trip_Planner.framework */;
+			productReference = 16AF51CBC921C368BECA136CA200FD17 /* Pods_Trip_Planner.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -238,12 +323,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B2A185617DAE7341151D45199B69FDCD /* Products */;
+			productRefGroup = BAF14580500F05F77B3D6D17C87273B8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				38ACA430605AFB4229712A18BDDF5086 /* KeychainSwift */,
 				584C6AB52DA3F6C1B2F9F572D0568496 /* PMSuperButton */,
-				FF099A87B1024CF829B40F9A209E9243 /* Pods-Trip-Planner */,
+				F3AFBF7DECDA6EF30988FBDCED59EDFD /* Pods-Trip-Planner */,
 			);
 		};
 /* End PBXProject section */
@@ -258,22 +344,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE2A768EB70A8A72CC303BE5031B264F /* Sources */ = {
+		90F5ED9FEE076269CA38139173284945 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3064ED0EFC34BE34A0C5BD8422077658 /* Pods-Trip-Planner-dummy.m in Sources */,
+				F896CB94069D294C6E2A1926FA994FC1 /* Pods-Trip-Planner-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA64D531146693E66BF1C1CEE1D81BC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD0E8D5F58B0B824D2631BDA9D541DFE /* KeychainSwift-dummy.m in Sources */,
+				CCBE57237E9F0DBAAF02A5575244F3BE /* KeychainSwift.swift in Sources */,
+				EBA8B955A11296BD7AA307752FE82ED4 /* KeychainSwiftAccessOptions.swift in Sources */,
+				7C0F17488B3552EAAFC074CFC4491DD5 /* TegKeychainConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F6E28642F194E61DDA4BB2F4D001854C /* PBXTargetDependency */ = {
+		7FF290172DE98BC024DA51BF3D982DDC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PMSuperButton;
 			target = 584C6AB52DA3F6C1B2F9F572D0568496 /* PMSuperButton */;
-			targetProxy = 540F6D7B8439CC4090C57CA6582BB541 /* PBXContainerItemProxy */;
+			targetProxy = 8EF44BCF6903F41E453E0F8D9971D0FE /* PBXContainerItemProxy */;
+		};
+		AF96750A165C6E4C5A0E521E0C239763 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainSwift;
+			target = 38ACA430605AFB4229712A18BDDF5086 /* KeychainSwift */;
+			targetProxy = 2DA2B7513009D1AD61C407DA3760502C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -333,9 +436,9 @@
 			};
 			name = Release;
 		};
-		30EB9774CED164896254E6958E14F8DF /* Release */ = {
+		1BF162ECB23784C0E7C5C62CA7011FF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28006767D4050F3CA84F13DD0E546178 /* Pods-Trip-Planner.release.xcconfig */;
+			baseConfigurationReference = F16BDACCA0A2A71F979A0506568633E6 /* KeychainSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -346,20 +449,49 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Trip-Planner/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainSwift/KeychainSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Trip-Planner/Pods-Trip-Planner.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Trip_Planner;
+				MODULEMAP_FILE = "Target Support Files/KeychainSwift/KeychainSwift.modulemap";
+				PRODUCT_NAME = KeychainSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2511EE2FF6B2A27D44E80BFB5C439F57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F16BDACCA0A2A71F979A0506568633E6 /* KeychainSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainSwift/KeychainSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KeychainSwift/KeychainSwift.modulemap";
+				PRODUCT_NAME = KeychainSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -429,7 +561,7 @@
 		};
 		A8941801938B5E76219EC552A8ADA9A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56F73CC18A42BDC32BCADBFB6362A94E /* PMSuperButton.xcconfig */;
+			baseConfigurationReference = 9D8CCFEFB54D6EDFF011806994EEFFB7 /* PMSuperButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -460,7 +592,7 @@
 		};
 		BF5CB29A41CAB23876E2831CBBE1A761 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56F73CC18A42BDC32BCADBFB6362A94E /* PMSuperButton.xcconfig */;
+			baseConfigurationReference = 9D8CCFEFB54D6EDFF011806994EEFFB7 /* PMSuperButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -490,7 +622,7 @@
 			};
 			name = Release;
 		};
-		DB97674FEF34B2B8286B5F47BF962C4D /* Debug */ = {
+		C77174F4D5D34B4B33A0ACDDD4BD8698 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 93694E1C925B16F06FFCFD4490E370D8 /* Pods-Trip-Planner.debug.xcconfig */;
 			buildSettings = {
@@ -524,9 +656,61 @@
 			};
 			name = Debug;
 		};
+		FDE8F9B29A54F965DBDFFE300A83D77A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28006767D4050F3CA84F13DD0E546178 /* Pods-Trip-Planner.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Trip-Planner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Trip-Planner/Pods-Trip-Planner.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Trip_Planner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0CC89CCF7EE28F471565043D314AA668 /* Build configuration list for PBXNativeTarget "Pods-Trip-Planner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C77174F4D5D34B4B33A0ACDDD4BD8698 /* Debug */,
+				FDE8F9B29A54F965DBDFFE300A83D77A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C5D5A8E6CDB4211B0732F819F55A47 /* Build configuration list for PBXNativeTarget "KeychainSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BF162ECB23784C0E7C5C62CA7011FF2 /* Debug */,
+				2511EE2FF6B2A27D44E80BFB5C439F57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		194CB6CCF275AA1E1EBCE931E47C7E45 /* Build configuration list for PBXNativeTarget "PMSuperButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -541,15 +725,6 @@
 			buildConfigurations = (
 				59F0302F2371FCC6B73EF0A418D40734 /* Debug */,
 				12C4B864767C59600DBFA238F1E2F8BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D4A3C3691ABEB44216B553BA0D7EF657 /* Build configuration list for PBXNativeTarget "Pods-Trip-Planner" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DB97674FEF34B2B8286B5F47BF962C4D /* Debug */,
-				30EB9774CED164896254E6958E14F8DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

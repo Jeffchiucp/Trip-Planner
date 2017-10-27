@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Trip-Planner/TripsViewController.swift"
-            timestampString = "530421137.350166"
+            timestampString = "530826912.241866"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
@@ -26,12 +26,12 @@
                   moduleName = "Trip-Planner"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/elmerastudillo/Desktop/MakeSchool_MOB2/Trip-Planner/Trip-Planner/Trip-Planner/TripsViewController.swift"
-                  timestampString = "530217273.579664"
+                  timestampString = "530827212.592394"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "32"
                   endingLineNumber = "32"
-                  offsetFromSymbolStart = "505">
+                  offsetFromSymbolStart = "778">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -41,7 +41,7 @@
                   moduleName = "Trip-Planner"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/elmerastudillo/Desktop/MakeSchool_MOB2/Trip-Planner/Trip-Planner/Trip-Planner/TripsViewController.swift"
-                  timestampString = "530217273.583181"
+                  timestampString = "530827212.596795"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Trip-Planner/TripsViewController.swift"
-            timestampString = "530421137.350316"
+            timestampString = "530826912.242923"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Trip-Planner/Trip.swift"
-            timestampString = "530231450.422805"
+            timestampString = "530827855.726836"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Trip-Planner/Trip.swift"
-            timestampString = "530231450.422857"
+            timestampString = "530827855.726939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
@@ -106,7 +106,7 @@
                   moduleName = "Trip-Planner"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/elmerastudillo/Desktop/MakeSchool_MOB2/Trip-Planner/Trip-Planner/Trip-Planner/Trip.swift"
-                  timestampString = "530217273.61707"
+                  timestampString = "530827212.620022"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "44"
@@ -121,7 +121,7 @@
                   moduleName = "Trip-Planner"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/elmerastudillo/Desktop/MakeSchool_MOB2/Trip-Planner/Trip-Planner/Trip-Planner/Trip.swift"
-                  timestampString = "530217273.619595"
+                  timestampString = "530827212.623083"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "42"
@@ -129,6 +129,22 @@
                   offsetFromSymbolStart = "8412">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Trip-Planner/LoginViewController.swift"
+            timestampString = "530827855.727"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "loginButtonPressed(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

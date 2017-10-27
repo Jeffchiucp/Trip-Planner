@@ -16,7 +16,8 @@ import sys
 
 
 app = Flask(__name__)
-mongo = MongoClient("mongodb://astudilloelmer:ea12345@ds127105.mlab.com:27105/trip_planner_development")
+# mongo = MongoClient("mongodb://astudilloelmer:ea12345@ds127105.mlab.com:27105/trip_planner_development")
+mongo = MongoClient('localhost', 27017)
 app.db = mongo.trip_planner_development
 app.bcrypt_rounds = 12
 api = Api(app)

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import KeychainSwift
 
 // Basic authorization to have access to the database
 struct BasicAuth
@@ -91,9 +92,12 @@ enum HTTPMethods: String
 class NetworkService
 {
     
+    
     // Networking function
     static func fetch(route: Route, user: User? = nil, trip: Trip? = nil, httpMethod: HTTPMethods, completionHandler: @escaping (Data, Int) -> Void)
     {
+        let keychain = KeychainSwift()
+        let credential = keychain.get("credential")
         // Setting the url string and appending the path
         let baseURL = "http://127.0.0.1:5000"
         //let baseURL = "https://desolate-meadow-39483.herokuapp.com"
@@ -103,7 +107,7 @@ class NetworkService
         var request = URLRequest(url: requestURLString!)
         // Adding the headers to the URLRequest
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue((user?.credential)!, forHTTPHeaderField: "Authorization")
+        request.addValue((credential)!, forHTTPHeaderField: "Authorization")
         // If not nil then use postbody
         if user != nil && httpMethod.rawValue == "POST" {
             request.httpBody = route.postBody(user: user)

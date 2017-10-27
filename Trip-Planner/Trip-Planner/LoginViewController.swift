@@ -7,19 +7,21 @@
 //
 
 import UIKit
+import KeychainSwift
 
 class LoginViewController: UIViewController {
+    
+    let user = UserDefaults()
 
     @IBOutlet weak var usernameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
+    var keychain = KeychainSwift()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.usernameTF.delegate = self
         self.passwordTF.delegate = self
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,12 +35,14 @@ class LoginViewController: UIViewController {
             print("The result is \(data) \(String(int))")
             if int == 200
             {
+                UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
                 let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
                 let tripsVC = storyboard.instantiateViewController(withIdentifier: "TripsViewController") as! TripsViewController
                 tripsVC.user = user
-                DispatchQueue.main.async {
-                    self.navigationController?.pushViewController(tripsVC, animated: true)
-                }
+//                DispatchQueue.main.async {
+                print(self.navigationController)
+                self.navigationController?.pushViewController(tripsVC, animated: true)
+                //}
             }
             else
             {
